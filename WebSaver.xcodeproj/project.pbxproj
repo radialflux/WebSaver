@@ -1,0 +1,303 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF704081160D5F2B00E7E2DC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF704080160D5F2B00E7E2DC /* Cocoa.framework */; };
+		CF704083160D5F2B00E7E2DC /* ScreenSaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF704082160D5F2B00E7E2DC /* ScreenSaver.framework */; };
+		CF70408D160D5F2B00E7E2DC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF70408B160D5F2B00E7E2DC /* InfoPlist.strings */; };
+		CF704091160D5F2B00E7E2DC /* WebSaverView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF704090160D5F2B00E7E2DC /* WebSaverView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CF70407D160D5F2B00E7E2DC /* WebSaver.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebSaver.saver; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF704080160D5F2B00E7E2DC /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		CF704082160D5F2B00E7E2DC /* ScreenSaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScreenSaver.framework; path = System/Library/Frameworks/ScreenSaver.framework; sourceTree = SDKROOT; };
+		CF704085160D5F2B00E7E2DC /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		CF704086160D5F2B00E7E2DC /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		CF704087160D5F2B00E7E2DC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CF70408A160D5F2B00E7E2DC /* WebSaver-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WebSaver-Info.plist"; sourceTree = "<group>"; };
+		CF70408C160D5F2B00E7E2DC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CF70408E160D5F2B00E7E2DC /* WebSaver-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WebSaver-Prefix.pch"; sourceTree = "<group>"; };
+		CF70408F160D5F2B00E7E2DC /* WebSaverView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebSaverView.h; sourceTree = "<group>"; };
+		CF704090160D5F2B00E7E2DC /* WebSaverView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebSaverView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF704078160D5F2B00E7E2DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF704081160D5F2B00E7E2DC /* Cocoa.framework in Frameworks */,
+				CF704083160D5F2B00E7E2DC /* ScreenSaver.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF704070160D5F2B00E7E2DC = {
+			isa = PBXGroup;
+			children = (
+				CF704088160D5F2B00E7E2DC /* WebSaver */,
+				CF70407F160D5F2B00E7E2DC /* Frameworks */,
+				CF70407E160D5F2B00E7E2DC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF70407E160D5F2B00E7E2DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF70407D160D5F2B00E7E2DC /* WebSaver.saver */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF70407F160D5F2B00E7E2DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF704080160D5F2B00E7E2DC /* Cocoa.framework */,
+				CF704082160D5F2B00E7E2DC /* ScreenSaver.framework */,
+				CF704084160D5F2B00E7E2DC /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF704084160D5F2B00E7E2DC /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF704085160D5F2B00E7E2DC /* AppKit.framework */,
+				CF704086160D5F2B00E7E2DC /* CoreData.framework */,
+				CF704087160D5F2B00E7E2DC /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		CF704088160D5F2B00E7E2DC /* WebSaver */ = {
+			isa = PBXGroup;
+			children = (
+				CF70408F160D5F2B00E7E2DC /* WebSaverView.h */,
+				CF704090160D5F2B00E7E2DC /* WebSaverView.m */,
+				CF704089160D5F2B00E7E2DC /* Supporting Files */,
+			);
+			path = WebSaver;
+			sourceTree = "<group>";
+		};
+		CF704089160D5F2B00E7E2DC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF70408A160D5F2B00E7E2DC /* WebSaver-Info.plist */,
+				CF70408B160D5F2B00E7E2DC /* InfoPlist.strings */,
+				CF70408E160D5F2B00E7E2DC /* WebSaver-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CF704079160D5F2B00E7E2DC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		CF70407C160D5F2B00E7E2DC /* WebSaver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF704094160D5F2B00E7E2DC /* Build configuration list for PBXNativeTarget "WebSaver" */;
+			buildPhases = (
+				CF704077160D5F2B00E7E2DC /* Sources */,
+				CF704078160D5F2B00E7E2DC /* Frameworks */,
+				CF704079160D5F2B00E7E2DC /* Headers */,
+				CF70407A160D5F2B00E7E2DC /* Resources */,
+				CF70407B160D5F2B00E7E2DC /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WebSaver;
+			productName = WebSaver;
+			productReference = CF70407D160D5F2B00E7E2DC /* WebSaver.saver */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF704072160D5F2B00E7E2DC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+			};
+			buildConfigurationList = CF704075160D5F2B00E7E2DC /* Build configuration list for PBXProject "WebSaver" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF704070160D5F2B00E7E2DC;
+			productRefGroup = CF70407E160D5F2B00E7E2DC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF70407C160D5F2B00E7E2DC /* WebSaver */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF70407A160D5F2B00E7E2DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF70408D160D5F2B00E7E2DC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		CF70407B160D5F2B00E7E2DC /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF704077160D5F2B00E7E2DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF704091160D5F2B00E7E2DC /* WebSaverView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CF70408B160D5F2B00E7E2DC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF70408C160D5F2B00E7E2DC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF704092160D5F2B00E7E2DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		CF704093160D5F2B00E7E2DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CF704095160D5F2B00E7E2DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WebSaver/WebSaver-Prefix.pch";
+				INFOPLIST_FILE = "WebSaver/WebSaver-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = saver;
+			};
+			name = Debug;
+		};
+		CF704096160D5F2B00E7E2DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WebSaver/WebSaver-Prefix.pch";
+				INFOPLIST_FILE = "WebSaver/WebSaver-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = saver;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF704075160D5F2B00E7E2DC /* Build configuration list for PBXProject "WebSaver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF704092160D5F2B00E7E2DC /* Debug */,
+				CF704093160D5F2B00E7E2DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF704094160D5F2B00E7E2DC /* Build configuration list for PBXNativeTarget "WebSaver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF704095160D5F2B00E7E2DC /* Debug */,
+				CF704096160D5F2B00E7E2DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF704072160D5F2B00E7E2DC /* Project object */;
+}
