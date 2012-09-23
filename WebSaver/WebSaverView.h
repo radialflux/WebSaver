@@ -8,6 +8,13 @@
 
 #import <ScreenSaver/ScreenSaver.h>
 
+#import <WebKit/WebKit.h>
+
 @interface WebSaverView : ScreenSaverView
+{
+	IBOutlet id configSheet;
+	IBOutlet id url;
+	WebView *webView;
+}
 
 @end

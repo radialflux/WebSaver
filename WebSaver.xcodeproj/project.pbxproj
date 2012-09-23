@@ -11,6 +11,9 @@
 		CF704083160D5F2B00E7E2DC /* ScreenSaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF704082160D5F2B00E7E2DC /* ScreenSaver.framework */; };
 		CF70408D160D5F2B00E7E2DC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF70408B160D5F2B00E7E2DC /* InfoPlist.strings */; };
 		CF704091160D5F2B00E7E2DC /* WebSaverView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF704090160D5F2B00E7E2DC /* WebSaverView.m */; };
+		CF70409A160D5FC100E7E2DC /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF704099160D5FC100E7E2DC /* WebKit.framework */; };
+		CF70409D160D60FF00E7E2DC /* ConfigureSheet.nib in Resources */ = {isa = PBXBuildFile; fileRef = CF70409B160D60FF00E7E2DC /* ConfigureSheet.nib */; };
+		CF70409E160D60FF00E7E2DC /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = CF70409C160D60FF00E7E2DC /* index.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +28,9 @@
 		CF70408E160D5F2B00E7E2DC /* WebSaver-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WebSaver-Prefix.pch"; sourceTree = "<group>"; };
 		CF70408F160D5F2B00E7E2DC /* WebSaverView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebSaverView.h; sourceTree = "<group>"; };
 		CF704090160D5F2B00E7E2DC /* WebSaverView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebSaverView.m; sourceTree = "<group>"; };
+		CF704099160D5FC100E7E2DC /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		CF70409B160D60FF00E7E2DC /* ConfigureSheet.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = ConfigureSheet.nib; sourceTree = "<group>"; };
+		CF70409C160D60FF00E7E2DC /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +40,7 @@
 			files = (
 				CF704081160D5F2B00E7E2DC /* Cocoa.framework in Frameworks */,
 				CF704083160D5F2B00E7E2DC /* ScreenSaver.framework in Frameworks */,
+				CF70409A160D5FC100E7E2DC /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +67,7 @@
 		CF70407F160D5F2B00E7E2DC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CF704099160D5FC100E7E2DC /* WebKit.framework */,
 				CF704080160D5F2B00E7E2DC /* Cocoa.framework */,
 				CF704082160D5F2B00E7E2DC /* ScreenSaver.framework */,
 				CF704084160D5F2B00E7E2DC /* Other Frameworks */,
@@ -90,6 +98,8 @@
 		CF704089160D5F2B00E7E2DC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CF70409B160D60FF00E7E2DC /* ConfigureSheet.nib */,
+				CF70409C160D60FF00E7E2DC /* index.html */,
 				CF70408A160D5F2B00E7E2DC /* WebSaver-Info.plist */,
 				CF70408B160D5F2B00E7E2DC /* InfoPlist.strings */,
 				CF70408E160D5F2B00E7E2DC /* WebSaver-Prefix.pch */,
@@ -160,6 +170,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF70408D160D5F2B00E7E2DC /* InfoPlist.strings in Resources */,
+				CF70409D160D60FF00E7E2DC /* ConfigureSheet.nib in Resources */,
+				CF70409E160D60FF00E7E2DC /* index.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,7 +235,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -247,6 +259,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -255,6 +268,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WebSaver/WebSaver-Prefix.pch";
 				INFOPLIST_FILE = "WebSaver/WebSaver-Info.plist";
@@ -268,6 +285,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WebSaver/WebSaver-Prefix.pch";
 				INFOPLIST_FILE = "WebSaver/WebSaver-Info.plist";
