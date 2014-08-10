@@ -4,12 +4,13 @@
 //
 //  Created by Thomas Robinson on 10/13/09.
 //  Modified by Pekka Nikander in May 2012.
+//  Modified by Greg Kellogg August 2014.
 //  Copyright (c) 2009, 280 North. All rights reserved.
 //  Copyright (c) 2012, Senseg.  All rights reserved.
+//  Copyright (c) 2014, MAKR.TOOLS, All rights reserved.
 //
 
 #import "WebSaverView.h"
-
 #import <WebKit/WebKit.h>
 
 @implementation WebSaverView
@@ -46,7 +47,9 @@ static NSString * const DefaultURL = @"http://www.senseg.com";
 
 	if (!configSheet)
 	{
-		if (![NSBundle loadNibNamed:@"ConfigureSheet" owner:self])
+		if (![NSBundle bundleWithIdentifier:@"ConfigureSheet" owner:self])
+        // if (![NSBundle loadNibNamed:@"ConfigureSheet" owner:self])
+
 		{
 			NSLog( @"Failed to load configure sheet." );
 			NSBeep();

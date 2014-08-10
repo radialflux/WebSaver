@@ -4,8 +4,10 @@
 //
 //  Created by Thomas Robinson on 10/13/09.
 //  Modified by Pekka Nikander in May 2012.
+//  Modified by Greg Kellogg August 2014.
 //  Copyright (c) 2009, 280 North. All rights reserved.
 //  Copyright (c) 2012, Senseg.  All rights reserved.
+//  Copyright (c) 2014, MAKR.TOOLS, All rights reserved.
 //
 
 #import <ScreenSaver/ScreenSaver.h>
